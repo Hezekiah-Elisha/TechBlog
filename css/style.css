@@ -1,7 +1,12 @@
 nav{
   padding-left: 10px;
   padding-right: 10px;
+  position: sticky;
 }
+nav a:hover{
+    background-color: rgba(5, 142, 171, 0.2);
+}
+
 .back img{
   width: 100%;
   height: 220px;
