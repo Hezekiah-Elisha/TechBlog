@@ -12,7 +12,9 @@ nav a:hover{
   height: 220px;
   background-size: cover;
 }
-
+main{
+  padding-top: 10px;
+}
 @media (max-width: 448px) {
   nav{
     padding-left: 2px;
