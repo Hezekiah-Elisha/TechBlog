@@ -48,3 +48,36 @@
 	content: "\e81f";
 	font-weight: bold;
 }
+.lnr-apartment:before{
+	content:"\e801";
+	font-weight: bold;
+}
+.lnr-user:before{
+	content:"\e82a";
+	font-weight: bold;
+}
+.lnr-exit:before{
+	content:"\e820";
+	font-weight: bold;
+}
+.lnr-file-add:before{
+	content:"\e81e";
+	font-weight: bold;
+}
+.lnr-printer:before{
+	content:"\e81c";
+	font-weight: bold;
+	padding: 2px;
+}
+.lnr-users:before{
+	content:"\e82b";
+	font-weight: bold;
+}
+.lnr-layers:before{
+	content:"\e88e";
+	font-weight: bold;
+}
+.lnr-leaf:before{
+	content:"\e849";
+	font-weight: bold;
+}

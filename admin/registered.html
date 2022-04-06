@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Tech Archlight</title>
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/icons.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="theme-color" content="#058EAB">
+  </head>
+  <body>
+    <header class="">
+      <nav class="position-relative navbar navbar-expand-lg navbar-dark nav-sticky">
+        <div class="container-fluid position-sticky top-0 start-0">
+          <a class="navbar-brand" href="index.html"><span id="brandc">The Tech Archlight - Dashboard</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../"><span class="lnr lnr-home"></span>Home</a>
+              </li>
+            </ul>
+            <div class="">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../login.html"><span class="lnr lnr-user"></span>User</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin/"><span class="lnr lnr-exit"></span>Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dash-other">
+      <div class="dash-side">
+        <a href="createpost.html"><span class="lnr lnr-file-add"></span>Create post</a>
+        <a href="registered.html"><span class="lnr lnr-users"></span>View Users</a>
+        <a href="publishedposts.html"><span class="lnr lnr-printer"></span>Published Posts</a>
+        <a href="manageposts.html"><span class="lnr lnr-layers"></span>Manage Posts</a>
+      </div>
+      <article class="dash-main">
+        <h3 class="dash-welcome">All users</h3>
+        <table class="table table-hover table-striped table-responsive">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>role</th>
+            <th>Delete</th>
+            <th>Edit</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>Admin</td>
+            <td>user@thetecharchlight.com</td>
+            <td>Author</td>
+            <td><button type="button" name="button" class="func btn btn-danger">Delete</button></td>
+            <td><button type="button" name="button" class="func btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>user</td>
+            <td>user@gmail.com</td>
+            <td>Author</td>
+            <td><button type="button" name="button" class="func btn btn-danger">Delete</button></td>
+            <td><button type="button" name="button" class="func btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></td>
+          </tr>
+        </table>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit info</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="col-form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Email</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="role" class="col-form-label">Role:</label>
+                    <select class="selects" name="" required>
+                      <option value="" selected>Select</option>
+                      <option value="">Admin</option>
+                      <option value="">Author</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Tech Archlight</title>
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/icons.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="theme-color" content="#058EAB">
+  </head>
+  <body>
+    <header class="">
+      <nav class="position-relative navbar navbar-expand-lg navbar-dark nav-sticky">
+        <div class="container-fluid position-sticky top-0 start-0">
+          <a class="navbar-brand" href="index.html"><span id="brandc">The Tech Archlight - Dashboard</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../"><span class="lnr lnr-home"></span>Home</a>
+              </li>
+            </ul>
+            <div class="">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../login.html"><span class="lnr lnr-user"></span>User</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin/"><span class="lnr lnr-exit"></span>Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dash-main">
+      <h3 class="dash-welcome">Welcome to the Dashboard</h3>
+
+      <div class="toast toast-dem d-flex align-items-center text-white border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <span class="lnr lnr-leaf"></span>Hello, world! This is a toast message.
+        </div>
+        <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <article class="dash-tabs">
+        <a href="registered.html" class="card"><h4>resgistered users</h4></a>
+        <a href="publishedposts.html" class="card"><h4>Published posts</h4></a>
+        <a href="#" class="card"><h4>Statistics</h4></a>
+      </article>
+    </main>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

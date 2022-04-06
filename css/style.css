@@ -9,6 +9,11 @@
   --text-color: #191419
 }
 
+@font-face{
+  font-family: georgia;
+  src: url(../fonts/Georgia.ttf);
+}
+
 @font-face {
   font-family: MediumSans;
   src: url(../fonts/Medium_500.ttf);
@@ -68,7 +73,7 @@ nav{
 .nav-item a:hover{
     background-color: var(--color1);
 }
-button{
+.blog-text button{
   background-color: var(--dark-accent) !important;
   border: none !important;
 }
@@ -111,6 +116,21 @@ main{
   display: none;
 }
 
+.myc{
+  margin: auto;
+  width: 80%;
+}
+
+.myc button{
+  /* padding: 100px; */
+}
+.myc .slick-prev{
+  z-index: 999;
+}
+.myc1, .myc2, .myc3, .myc4{
+  /* margin: 100px; */
+}
+
 .card{
   background-color: var(--lightAccent);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -136,8 +156,17 @@ main{
 .content {
   padding: 50px;
 }
-.content > p{
-    font-size: 1.2em;
+.content{
+  font-family:serif;
+  font-size: 1.2em;
+}
+.content > p, .content p a{
+  font-family: georgia;
+  /* font-size: 1.1em; */
+  /* line-height: normal; */
+}
+.content h2, .content h3, .content h4, .content h5, .content h6{
+  font-family: MediumSans;
 }
 
 .topics ul{
@@ -153,11 +182,17 @@ ul.striped-list > li {
     border-bottom: 1px solid var(--background);
     padding: 6px;
 }
+.toast{
+  background-color: var(--dark-accent);
+}
 
 
 footer{
   background-color: var(--dark-accent);
   /* margin:0; */
+}
+footer .trade-mark{
+  /* font-size: 34px; */
 }
 
 .login-main {
@@ -230,6 +265,12 @@ form{
   right: 0;
   z-index: 99;
 }
+
+#sec-btn{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
 /* // X-Small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
 
@@ -248,6 +289,17 @@ form{
   }
   .navbar-nav li{
     text-align: center;
+
+  }
+  /* .myc{
+    margin: auto;
+    margin: 84px;
+  } */
+  .myc img{
+    height: 15vh;
+  }
+  .myc button{
+    padding: 40px;
 
   }
   .login-main {
@@ -348,8 +400,12 @@ form{
   .topics{
     position:-webkit-sticky;
     position:sticky;
+    /* padding-left: 30%; */
     top:0;
     z-index: 9999;
+  }
+  .topics h3{
+    padding: 10px;
   }
 }
 
@@ -392,11 +448,16 @@ form{
   .topics{
     position:-webkit-sticky;
     position:sticky;
-    top:0;
-    z-index: 999;
+    top: 10%;
+    /* margin-top: 100px; */
+    z-index: 9999;
   }
   .topics h3{
     padding: 10px;
+  }
+  .search{
+    position:-webkit-sticky;
+    position: sticky;
   }
 }
 
